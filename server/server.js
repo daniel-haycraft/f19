@@ -1,7 +1,7 @@
-const express = requre('express');
+const express = require('express');
 const cors = require('cors');
 // const { application } = require('express');
-const path = require('path;');
+const path = require('path');
 
 const app = express();
 app.use(cors());
@@ -14,5 +14,5 @@ app.get('/', function (req, res) {
 
 const port = process.env.PORT || 4005;
 app.listen(port, ()=> {
-    console.log(`Parting on port ${port} till we die`)
+    console.log(`Partying on port ${port} till we die`)
 })
