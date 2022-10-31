@@ -14,6 +14,7 @@ app.get('/styles', (req, res) =>{
     res.sendFile(path.join__dirname, "../public/index.css")
 })
 const port = process.env.PORT || 4005;
+
 app.listen(port, ()=> {
     console.log(`Partying on port ${port} till we die`)
 })
