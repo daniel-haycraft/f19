@@ -9,7 +9,7 @@ app.use(express.json());
 
 //middleware
 app.use(express.static(path.join(__dirname, "../public")));
-app.use(express.static(path.join(__dirname, "../public/index.css")));
+app.use("/styles", express.static(path.join(__dirname, "../public/index.css")));
 //END POINTS
 
 // app.get("/", function (req, res) {
