@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "../public")));
 //serves entire folder ^^
 // serves specific thing you are referencing, could be out side of public folder
-// app.use("/styles", express.static(path.join(__dirname, "../public/index.css")));
+app.use("/public", express.static(path.join(__dirname, "../public")));
 //END POINTS
 
 // app.get("/", function (req, res) {
